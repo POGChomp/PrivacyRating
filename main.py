@@ -92,8 +92,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 print("Port is closed")
 
                 subprocess.Popen(
-                    "mate-terminal -e '{MOBSFPATH} {SERVER}'".format(MOBSFPATH=config.MOBSFPATH,
-                                                                     SERVER=config.SERVER[7:]),
+                    "{TERMINAL} -e '{MOBSFPATH} {SERVER}'".format(TERMINAL=config.TERMINAL, MOBSFPATH=config.MOBSFPATH,
+                                                                  SERVER=config.SERVER[7:]),
                     shell=True)
 
                 # program has to wait a short time, so MobSF can start up. 5 seconds should be enough.
@@ -149,7 +149,6 @@ class NoToolDialog(QDialog, Ui_Dialog):
 
 
 if __name__ == "__main__":
-
     # Create the application
     app = QtWidgets.QApplication(sys.argv)
     # Create and show the application's main window
