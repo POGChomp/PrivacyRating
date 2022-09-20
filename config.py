@@ -1,4 +1,4 @@
-# File for configuration
+# Configuration file
 
 FILE = "file/path/for/faster/debugging.apk"
 SERVER = "http://127.0.0.1:8000"  # Address for MobSF

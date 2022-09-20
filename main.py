@@ -155,5 +155,6 @@ if __name__ == "__main__":
     # Create and show the application's main window
     window = MainWindow()
     window.show()
+
     # Run the application's main loop
     sys.exit(app.exec())
